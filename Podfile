@@ -7,5 +7,5 @@ target 'Bise' do
 
   # Pods for Bise
   pod 'FSCalendar'
-  
+  pod 'IQKeyboardManagerSwift'
 end
