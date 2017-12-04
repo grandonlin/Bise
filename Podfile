@@ -8,4 +8,10 @@ target 'Bise' do
   # Pods for Bise
   pod 'FSCalendar'
   pod 'IQKeyboardManagerSwift'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Auth'
+  pod 'SwiftKeychainWrapper', '~> 3.0.1'
+
 end

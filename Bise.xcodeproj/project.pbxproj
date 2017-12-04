@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		9EC0F5DC88FD0E571B1AEF24 /* Pods_Bise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BD806F8B44067FDB100A44 /* Pods_Bise.framework */; };
+		C146844F1FCD02CE00908B53 /* OwnerSetupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C146844E1FCD02CE00908B53 /* OwnerSetupVC.swift */; };
+		C14684511FCD127500908B53 /* ShopperSetupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14684501FCD127500908B53 /* ShopperSetupVC.swift */; };
+		C14684531FCD8B9500908B53 /* BTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14684521FCD8B9500908B53 /* BTextField.swift */; };
+		C14684551FCE11C100908B53 /* Shopper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14684541FCE11C100908B53 /* Shopper.swift */; };
 		C1524A311FC44A0000FF62D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1524A301FC44A0000FF62D6 /* AppDelegate.swift */; };
 		C1524A331FC44A0000FF62D6 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1524A321FC44A0000FF62D6 /* LoginVC.swift */; };
 		C1524A361FC44A0000FF62D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1524A341FC44A0000FF62D6 /* Main.storyboard */; };
 		C1524A381FC44A0000FF62D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1524A371FC44A0000FF62D6 /* Assets.xcassets */; };
 		C1524A3B1FC44A0000FF62D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1524A391FC44A0000FF62D6 /* LaunchScreen.storyboard */; };
 		C1524A461FC44ACD00FF62D6 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1524A451FC44ACD00FF62D6 /* Global.swift */; };
+		C1524A491FC4531200FF62D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1524A481FC4531200FF62D6 /* GoogleService-Info.plist */; };
+		C1524A4C1FC4D2B600FF62D6 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1524A4B1FC4D2B600FF62D6 /* DataService.swift */; };
+		C1524A4E1FC51B0E00FF62D6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1524A4D1FC51B0E00FF62D6 /* User.swift */; };
+		C1524A501FC51DAC00FF62D6 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1524A4F1FC51DAC00FF62D6 /* Owner.swift */; };
+		C1524A521FC6282F00FF62D6 /* NewUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1524A511FC6282F00FF62D6 /* NewUserVC.swift */; };
+		C1D94F5C1FD3344E007D3851 /* OwnerScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D94F5B1FD3344E007D3851 /* OwnerScheduleVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		34BD806F8B44067FDB100A44 /* Pods_Bise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F53BB4B9E0C0840EF97ABF3 /* Pods-Bise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bise/Pods-Bise.debug.xcconfig"; sourceTree = "<group>"; };
+		C146844E1FCD02CE00908B53 /* OwnerSetupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnerSetupVC.swift; sourceTree = "<group>"; };
+		C14684501FCD127500908B53 /* ShopperSetupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopperSetupVC.swift; sourceTree = "<group>"; };
+		C14684521FCD8B9500908B53 /* BTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTextField.swift; sourceTree = "<group>"; };
+		C14684541FCE11C100908B53 /* Shopper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shopper.swift; sourceTree = "<group>"; };
 		C1524A2D1FC44A0000FF62D6 /* Bise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1524A301FC44A0000FF62D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1524A321FC44A0000FF62D6 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -27,6 +41,12 @@
 		C1524A3A1FC44A0000FF62D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1524A3C1FC44A0000FF62D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1524A451FC44ACD00FF62D6 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		C1524A481FC4531200FF62D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C1524A4B1FC4D2B600FF62D6 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		C1524A4D1FC51B0E00FF62D6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C1524A4F1FC51DAC00FF62D6 /* Owner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		C1524A511FC6282F00FF62D6 /* NewUserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUserVC.swift; sourceTree = "<group>"; };
+		C1D94F5B1FD3344E007D3851 /* OwnerScheduleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnerScheduleVC.swift; sourceTree = "<group>"; };
 		EA3496D7E79674EFDD61DA55 /* Pods-Bise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bise.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bise/Pods-Bise.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +100,7 @@
 		C1524A2F1FC44A0000FF62D6 /* Bise */ = {
 			isa = PBXGroup;
 			children = (
+				C1524A4A1FC4540C00FF62D6 /* DataService */,
 				C1524A471FC44C5C00FF62D6 /* Global */,
 				C1524A441FC44AAA00FF62D6 /* Model */,
 				C1524A431FC44AA300FF62D6 /* View */,
@@ -89,6 +110,7 @@
 				C1524A371FC44A0000FF62D6 /* Assets.xcassets */,
 				C1524A391FC44A0000FF62D6 /* LaunchScreen.storyboard */,
 				C1524A3C1FC44A0000FF62D6 /* Info.plist */,
+				C1524A481FC4531200FF62D6 /* GoogleService-Info.plist */,
 			);
 			path = Bise;
 			sourceTree = "<group>";
@@ -97,6 +119,10 @@
 			isa = PBXGroup;
 			children = (
 				C1524A321FC44A0000FF62D6 /* LoginVC.swift */,
+				C1524A511FC6282F00FF62D6 /* NewUserVC.swift */,
+				C146844E1FCD02CE00908B53 /* OwnerSetupVC.swift */,
+				C1D94F5B1FD3344E007D3851 /* OwnerScheduleVC.swift */,
+				C14684501FCD127500908B53 /* ShopperSetupVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -104,6 +130,7 @@
 		C1524A431FC44AA300FF62D6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C14684521FCD8B9500908B53 /* BTextField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -111,6 +138,9 @@
 		C1524A441FC44AAA00FF62D6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C1524A4D1FC51B0E00FF62D6 /* User.swift */,
+				C1524A4F1FC51DAC00FF62D6 /* Owner.swift */,
+				C14684541FCE11C100908B53 /* Shopper.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -121,6 +151,14 @@
 				C1524A451FC44ACD00FF62D6 /* Global.swift */,
 			);
 			name = Global;
+			sourceTree = "<group>";
+		};
+		C1524A4A1FC4540C00FF62D6 /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				C1524A4B1FC4D2B600FF62D6 /* DataService.swift */,
+			);
+			name = DataService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1524A3B1FC44A0000FF62D6 /* LaunchScreen.storyboard in Resources */,
+				C1524A491FC4531200FF62D6 /* GoogleService-Info.plist in Resources */,
 				C1524A381FC44A0000FF62D6 /* Assets.xcassets in Resources */,
 				C1524A361FC44A0000FF62D6 /* Main.storyboard in Resources */,
 			);
@@ -248,8 +287,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1524A461FC44ACD00FF62D6 /* Global.swift in Sources */,
+				C1524A501FC51DAC00FF62D6 /* Owner.swift in Sources */,
 				C1524A331FC44A0000FF62D6 /* LoginVC.swift in Sources */,
+				C14684511FCD127500908B53 /* ShopperSetupVC.swift in Sources */,
+				C14684551FCE11C100908B53 /* Shopper.swift in Sources */,
+				C14684531FCD8B9500908B53 /* BTextField.swift in Sources */,
 				C1524A311FC44A0000FF62D6 /* AppDelegate.swift in Sources */,
+				C146844F1FCD02CE00908B53 /* OwnerSetupVC.swift in Sources */,
+				C1D94F5C1FD3344E007D3851 /* OwnerScheduleVC.swift in Sources */,
+				C1524A4E1FC51B0E00FF62D6 /* User.swift in Sources */,
+				C1524A521FC6282F00FF62D6 /* NewUserVC.swift in Sources */,
+				C1524A4C1FC4D2B600FF62D6 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +465,7 @@
 				C1524A411FC44A0000FF62D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
