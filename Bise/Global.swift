@@ -19,7 +19,10 @@ let CURRENT_EMAIL = "current email"
 let CURRENT_PASSWORD = "current password"
 let DEFAULT_LOCATION_IMAGE_URL = "https://firebasestorage.googleapis.com/v0/b/bise-5884a.appspot.com/o/emptyImage.png?alt=media&token=b0595586-af18-4b6c-98cf-594f4487f66c"
 let HANDLE = UInt(0)
-let timeArr = ["12AM","0:30AM","1AM","1:30AM","2AM","2:30AM","3AM","3:30AM","4AM","4:30AM","5AM","5:30AM","6AM","6:30AM","7AM","7:30AM","8AM","8:30AM","9AM","9:30AM","10AM","10:30AM","11AM","11:30AM","12PM","12:30PM","1PM","1:30PM","2PM","2:30PM","3PM","3:30PM","4PM","4:30PM","5PM","5:30PM","6PM","6:30PM","7PM","7:30PM","8PM","3:30AM","9PM","3:30AM","10PM","3:30AM","11PM","3:30AM",]
+let weekArr = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+let hourArr = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
+let minuteArr = ["00","10","20","30","40","50"]
+let amPmArr = ["AM", "PM"]
 
 var currentUsername: String!
 var currentEmail: String!
@@ -46,6 +49,11 @@ extension UIViewController {
             alert.addAction(UIAlertAction(title: action, style: .default, handler: nil))
         }
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    func setNoTextOnBackBarButton() {
+        let backButton = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
+        self.navigationItem.setLeftBarButton(backButton, animated: false)
     }
 }
 

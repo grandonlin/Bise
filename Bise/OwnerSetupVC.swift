@@ -8,17 +8,23 @@
 
 import UIKit
 
-class OwnerSetupVC: UIViewController {
+class OwnerSetupVC: UIViewController, UIPickerViewDelegate {
 
+    @IBOutlet weak var streetNumberTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
         self.navigationItem.hidesBackButton = true
     }
 
+    @IBAction func nextBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: "OwnerScheduleVC", sender: nil)
+    }
     
-
+    func addPickerView() {
+        let pickerView = UIPickerView()
+        pickerView.delegate = self
+        streetNumberTextField.inputView = pickerView
+    }
 }

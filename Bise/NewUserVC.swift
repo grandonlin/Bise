@@ -28,6 +28,13 @@ class NewUserVC: UIViewController {
 
         initialize()
         
+        
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(true)
+        DataService().OWNERS_REF.removeAllObservers()
+        DataService().SHOPPERS_REF.removeAllObservers()
     }
 
     func initialize() {
@@ -37,7 +44,7 @@ class NewUserVC: UIViewController {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.setNavigationBarHidden(false, animated: true)
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
+        self.setNoTextOnBackBarButton()
     }
     
     func configureTextField(textFields: [UITextField]) {
@@ -80,7 +87,7 @@ class NewUserVC: UIViewController {
         if !ownerShopperSwitch.isOn {
             DataService().OWNERS_REF.observeSingleEvent(of: .value, with: { (snapshot) in
                 if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
-                    self.usernameExisted = self.checkExistingUser(category: OWNER, snapshot: snapshot, userName: userName)
+                    self.usernameExisted = self.checkExistingUser(snapshot: snapshot, userName: userName)
                     if self.usernameExisted == true {
                         self.sendAlertWithoutHandler(alertTitle: "Username Exists", alertMessage: "This username has been occupied, please use another.", actionTitle: ["Cancel"])
                         self.usernameExisted = false
@@ -95,7 +102,7 @@ class NewUserVC: UIViewController {
         } else {
             DataService().SHOPPERS_REF.observeSingleEvent(of: .value, with: { (snapshot) in
                 if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
-                    self.usernameExisted = self.checkExistingUser(category: SHOPPER, snapshot: snapshot, userName: userName)
+                    self.usernameExisted = self.checkExistingUser(snapshot: snapshot, userName: userName)
                     if self.usernameExisted == true {
                         self.sendAlertWithoutHandler(alertTitle: "Username Exists", alertMessage: "This username has been occupied, please use another.", actionTitle: ["Cancel"])
                         self.usernameExisted = false
@@ -107,38 +114,24 @@ class NewUserVC: UIViewController {
                 }
             })
         }
+        
+        
     }
     
-    func checkExistingUser(category: String, snapshot: [DataSnapshot], userName: String) -> Bool {
+    func checkExistingUser(snapshot: [DataSnapshot], userName: String) -> Bool {
         var exist = false
-        if category == OWNER {
-            for snap in snapshot {
-                if let ownerSnap = snap.value as? Dictionary<String, Any> {
-                    if let name = ownerSnap["Username"] as? String {
-                        print("Grandon: username for owner is \(name)")
-                        if name == userName {
-                            exist = true
-                            print("Grandon: is it true? \(exist)")
-                            break
-                        }
-                    }
-                }
-            }
-        } else {
-            for snap in snapshot {
-                if let shoppersSnap = snap.value as? Dictionary<String, Any> {
-                    if let name = shoppersSnap["Username"] as? String {
-                        print("Grandon: username for shopper is \(name)")
-                        if userName == name {
-                            exist = true
-                            print("Grandon: is it true? \(exist)")
-                            break
-                        }
+        for snap in snapshot {
+            if let userSnap = snap.value as? Dictionary<String, Any> {
+                if let name = userSnap["Username"] as? String {
+                    print("Grandon: username is \(name)")
+                    if name == userName {
+                        exist = true
+                        print("Grandon: is it true? \(exist)")
+                        break
                     }
                 }
             }
         }
-        
         return exist
     }
     
@@ -183,7 +176,7 @@ class NewUserVC: UIViewController {
         //        loadingView.hide()
 //        activityIndicator.stopAnimating()
         if user.category == OWNER {
-            performSegue(withIdentifier: "StoreSetupVC", sender: nil)
+            performSegue(withIdentifier: "OwnerSetupVC", sender: nil)
         } else {
             performSegue(withIdentifier: "ShopperSetupVC", sender: nil)
         }

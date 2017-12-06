@@ -14,7 +14,6 @@
 		C14684551FCE11C100908B53 /* Shopper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14684541FCE11C100908B53 /* Shopper.swift */; };
 		C1524A311FC44A0000FF62D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1524A301FC44A0000FF62D6 /* AppDelegate.swift */; };
 		C1524A331FC44A0000FF62D6 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1524A321FC44A0000FF62D6 /* LoginVC.swift */; };
-		C1524A361FC44A0000FF62D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1524A341FC44A0000FF62D6 /* Main.storyboard */; };
 		C1524A381FC44A0000FF62D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1524A371FC44A0000FF62D6 /* Assets.xcassets */; };
 		C1524A3B1FC44A0000FF62D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1524A391FC44A0000FF62D6 /* LaunchScreen.storyboard */; };
 		C1524A461FC44ACD00FF62D6 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1524A451FC44ACD00FF62D6 /* Global.swift */; };
@@ -23,6 +22,7 @@
 		C1524A4E1FC51B0E00FF62D6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1524A4D1FC51B0E00FF62D6 /* User.swift */; };
 		C1524A501FC51DAC00FF62D6 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1524A4F1FC51DAC00FF62D6 /* Owner.swift */; };
 		C1524A521FC6282F00FF62D6 /* NewUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1524A511FC6282F00FF62D6 /* NewUserVC.swift */; };
+		C16FA3071FD8321700757CAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C16FA3051FD8321700757CAF /* Main.storyboard */; };
 		C1D94F5C1FD3344E007D3851 /* OwnerScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D94F5B1FD3344E007D3851 /* OwnerScheduleVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +36,6 @@
 		C1524A2D1FC44A0000FF62D6 /* Bise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1524A301FC44A0000FF62D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1524A321FC44A0000FF62D6 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		C1524A351FC44A0000FF62D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C1524A371FC44A0000FF62D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1524A3A1FC44A0000FF62D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1524A3C1FC44A0000FF62D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +45,7 @@
 		C1524A4D1FC51B0E00FF62D6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C1524A4F1FC51DAC00FF62D6 /* Owner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		C1524A511FC6282F00FF62D6 /* NewUserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUserVC.swift; sourceTree = "<group>"; };
+		C16FA3061FD8321700757CAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Bise/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C1D94F5B1FD3344E007D3851 /* OwnerScheduleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnerScheduleVC.swift; sourceTree = "<group>"; };
 		EA3496D7E79674EFDD61DA55 /* Pods-Bise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bise.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bise/Pods-Bise.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,8 +106,8 @@
 				C1524A431FC44AA300FF62D6 /* View */,
 				C1524A421FC44A9B00FF62D6 /* Controller */,
 				C1524A301FC44A0000FF62D6 /* AppDelegate.swift */,
-				C1524A341FC44A0000FF62D6 /* Main.storyboard */,
 				C1524A371FC44A0000FF62D6 /* Assets.xcassets */,
+				C16FA3051FD8321700757CAF /* Main.storyboard */,
 				C1524A391FC44A0000FF62D6 /* LaunchScreen.storyboard */,
 				C1524A3C1FC44A0000FF62D6 /* Info.plist */,
 				C1524A481FC4531200FF62D6 /* GoogleService-Info.plist */,
@@ -227,7 +227,7 @@
 				C1524A3B1FC44A0000FF62D6 /* LaunchScreen.storyboard in Resources */,
 				C1524A491FC4531200FF62D6 /* GoogleService-Info.plist in Resources */,
 				C1524A381FC44A0000FF62D6 /* Assets.xcassets in Resources */,
-				C1524A361FC44A0000FF62D6 /* Main.storyboard in Resources */,
+				C16FA3071FD8321700757CAF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,20 +304,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C1524A341FC44A0000FF62D6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C1524A351FC44A0000FF62D6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C1524A391FC44A0000FF62D6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C1524A3A1FC44A0000FF62D6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C16FA3051FD8321700757CAF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C16FA3061FD8321700757CAF /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

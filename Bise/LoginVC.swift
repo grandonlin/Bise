@@ -31,6 +31,7 @@ class LoginVC: UIViewController {
         emailTextField.layer.sublayerTransform = CATransform3DMakeTranslation(15, 0, 0)
         passwordTextField.layer.sublayerTransform = CATransform3DMakeTranslation(15, 0, 0)
         signInBtn.heightCircleView()
+        
     }
 
     @IBAction func signInBtnPressed(_ sender: Any) {
