@@ -45,9 +45,7 @@ class OwnerScheduleVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
 
         operationHoursPickerView.dataSource = self
         operationHoursPickerView.delegate = self
-//        let backButton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-//        navigationItem.setLeftBarButton(backButton, animated: false)
-        self.setNoTextOnBackBarButton()
+
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -191,17 +189,6 @@ class OwnerScheduleVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         }
     }
     
-    @IBAction func signOutBtnPressed(_ sender: Any) {
-        do {
-            try Auth.auth().signOut()
-            let remove = KeychainWrapper.standard.removeObject(forKey: OWNER_COUNT)
-//            print("Grandon: \(remove)")
-//            performSegue(withIdentifier: "LoginVC", sender: nil)
-        } catch let err as NSError {
-            print(err.debugDescription)
-        }
 
-        
-    }
     
 }

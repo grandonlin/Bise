@@ -17,6 +17,8 @@ class NewUserVC: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signUpBtn: UIButton!
     @IBOutlet weak var ownerShopperSwitch: UISwitch!
+    @IBOutlet weak var test: UITextField!
+    
     
 //    var userName: String!
 //    var password: String!
@@ -44,23 +46,11 @@ class NewUserVC: UIViewController {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.setNavigationBarHidden(false, animated: true)
-        self.setNoTextOnBackBarButton()
+//        self.setNoTextOnBackBarButton()
     }
     
-    func configureTextField(textFields: [UITextField]) {
-        for i in 0..<textFields.count {
-            textFields[i].heightCircleView()
-            textFields[i].layer.sublayerTransform = CATransform3DMakeTranslation(15, 0, 0)
-            assignImageToTextField(imageName: i, textField: textFields[i])
-        }
-    }
+        
     
-    func assignImageToTextField(imageName: Int, textField: UITextField) {
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-        imageView.image = UIImage(named: UIImage().getImageName(name: imageName))
-        textField.leftView = imageView
-        textField.leftViewMode = .always
-    }
     
     @IBAction func signUpBtnPressed(_ sender: Any) {
         
@@ -118,6 +108,11 @@ class NewUserVC: UIViewController {
         
     }
     
+    @IBAction func backBtnPressed(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
     func checkExistingUser(snapshot: [DataSnapshot], userName: String) -> Bool {
         var exist = false
         for snap in snapshot {
@@ -153,6 +148,7 @@ class NewUserVC: UIViewController {
                 if category == OWNER {
                     let owner = Owner(ownerName: username, email: email)
                     let locationData = ["Username": username, "Store Information": ["Email": email, "Store Image URL": DEFAULT_LOCATION_IMAGE_URL]] as [String: Any]
+                    KeychainWrapper.standard.set(owner.ownerID, forKey: CURRENT_OWNER_ID)
                     self.completeSignIn(user: owner, id: owner.ownerID, userData: locationData)
                 } else {
                     let shopper = Shopper(shopperName: username, email: email)
@@ -176,7 +172,7 @@ class NewUserVC: UIViewController {
         //        loadingView.hide()
 //        activityIndicator.stopAnimating()
         if user.category == OWNER {
-            performSegue(withIdentifier: "OwnerSetupVC", sender: nil)
+            performSegue(withIdentifier: "OwnerInformationVC", sender: nil)
         } else {
             performSegue(withIdentifier: "ShopperSetupVC", sender: nil)
         }

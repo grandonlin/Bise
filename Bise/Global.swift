@@ -12,6 +12,7 @@ let KEY_UID = "key uid"
 let USER_COUNT = "user count"
 let OWNER = "OWNER"
 let OWNER_COUNT = "owner count"
+let CURRENT_OWNER_ID = "current owner id"
 let SHOPPER = "SHOPPER"
 let SHOPPER_COUNT = "shopper count"
 let CURRENT_USERNAME = "current username"
@@ -23,6 +24,9 @@ let weekArr = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday
 let hourArr = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
 let minuteArr = ["00","10","20","30","40","50"]
 let amPmArr = ["AM", "PM"]
+let timeArr = ["hour(s)", "minutes"]
+let priceUnitArr = ["15 mins", "30 mins", "45 mins", "hour", "time"]
+var services = [Service]()
 
 var currentUsername: String!
 var currentEmail: String!
@@ -54,6 +58,21 @@ extension UIViewController {
     func setNoTextOnBackBarButton() {
         let backButton = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
         self.navigationItem.setLeftBarButton(backButton, animated: false)
+    }
+    
+    func configureTextField(textFields: [UITextField]) {
+        for i in 0..<textFields.count {
+            textFields[i].heightCircleView()
+            textFields[i].layer.sublayerTransform = CATransform3DMakeTranslation(15, 0, 0)
+            assignImageToTextField(imageName: i, textField: textFields[i])
+        }
+    }
+    
+    func assignImageToTextField(imageName: Int, textField: UITextField) {
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+        imageView.image = UIImage(named: UIImage().getImageName(name: imageName))
+        textField.leftView = imageView
+        textField.leftViewMode = .always
     }
 }
 
@@ -130,4 +149,8 @@ extension UIImage {
         }
         return imageName
     }
+}
+
+extension UITextFieldDelegate {
+    
 }

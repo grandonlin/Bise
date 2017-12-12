@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9EC0F5DC88FD0E571B1AEF24 /* Pods_Bise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BD806F8B44067FDB100A44 /* Pods_Bise.framework */; };
-		C146844F1FCD02CE00908B53 /* OwnerSetupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C146844E1FCD02CE00908B53 /* OwnerSetupVC.swift */; };
+		C146844F1FCD02CE00908B53 /* OwnerInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C146844E1FCD02CE00908B53 /* OwnerInformationVC.swift */; };
 		C14684511FCD127500908B53 /* ShopperSetupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14684501FCD127500908B53 /* ShopperSetupVC.swift */; };
 		C14684531FCD8B9500908B53 /* BTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14684521FCD8B9500908B53 /* BTextField.swift */; };
 		C14684551FCE11C100908B53 /* Shopper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14684541FCE11C100908B53 /* Shopper.swift */; };
@@ -23,13 +23,17 @@
 		C1524A501FC51DAC00FF62D6 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1524A4F1FC51DAC00FF62D6 /* Owner.swift */; };
 		C1524A521FC6282F00FF62D6 /* NewUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1524A511FC6282F00FF62D6 /* NewUserVC.swift */; };
 		C16FA3071FD8321700757CAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C16FA3051FD8321700757CAF /* Main.storyboard */; };
+		C16FA3091FDAB52700757CAF /* OwnerServicesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16FA3081FDAB52700757CAF /* OwnerServicesVC.swift */; };
+		C16FA30B1FDABBA200757CAF /* MainServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16FA30A1FDABBA200757CAF /* MainServiceCell.swift */; };
+		C16FA30D1FDABC8B00757CAF /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16FA30C1FDABC8B00757CAF /* Service.swift */; };
+		C16FA30F1FDC1C1A00757CAF /* ServiceDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16FA30E1FDC1C1A00757CAF /* ServiceDetailVC.swift */; };
 		C1D94F5C1FD3344E007D3851 /* OwnerScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D94F5B1FD3344E007D3851 /* OwnerScheduleVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		34BD806F8B44067FDB100A44 /* Pods_Bise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F53BB4B9E0C0840EF97ABF3 /* Pods-Bise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bise/Pods-Bise.debug.xcconfig"; sourceTree = "<group>"; };
-		C146844E1FCD02CE00908B53 /* OwnerSetupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnerSetupVC.swift; sourceTree = "<group>"; };
+		C146844E1FCD02CE00908B53 /* OwnerInformationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnerInformationVC.swift; sourceTree = "<group>"; };
 		C14684501FCD127500908B53 /* ShopperSetupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopperSetupVC.swift; sourceTree = "<group>"; };
 		C14684521FCD8B9500908B53 /* BTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTextField.swift; sourceTree = "<group>"; };
 		C14684541FCE11C100908B53 /* Shopper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shopper.swift; sourceTree = "<group>"; };
@@ -46,6 +50,10 @@
 		C1524A4F1FC51DAC00FF62D6 /* Owner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		C1524A511FC6282F00FF62D6 /* NewUserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUserVC.swift; sourceTree = "<group>"; };
 		C16FA3061FD8321700757CAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Bise/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C16FA3081FDAB52700757CAF /* OwnerServicesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnerServicesVC.swift; sourceTree = "<group>"; };
+		C16FA30A1FDABBA200757CAF /* MainServiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainServiceCell.swift; sourceTree = "<group>"; };
+		C16FA30C1FDABC8B00757CAF /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		C16FA30E1FDC1C1A00757CAF /* ServiceDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceDetailVC.swift; sourceTree = "<group>"; };
 		C1D94F5B1FD3344E007D3851 /* OwnerScheduleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnerScheduleVC.swift; sourceTree = "<group>"; };
 		EA3496D7E79674EFDD61DA55 /* Pods-Bise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bise.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bise/Pods-Bise.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,8 +128,10 @@
 			children = (
 				C1524A321FC44A0000FF62D6 /* LoginVC.swift */,
 				C1524A511FC6282F00FF62D6 /* NewUserVC.swift */,
-				C146844E1FCD02CE00908B53 /* OwnerSetupVC.swift */,
+				C146844E1FCD02CE00908B53 /* OwnerInformationVC.swift */,
 				C1D94F5B1FD3344E007D3851 /* OwnerScheduleVC.swift */,
+				C16FA3081FDAB52700757CAF /* OwnerServicesVC.swift */,
+				C16FA30E1FDC1C1A00757CAF /* ServiceDetailVC.swift */,
 				C14684501FCD127500908B53 /* ShopperSetupVC.swift */,
 			);
 			name = Controller;
@@ -131,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				C14684521FCD8B9500908B53 /* BTextField.swift */,
+				C16FA30A1FDABBA200757CAF /* MainServiceCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -141,6 +152,7 @@
 				C1524A4D1FC51B0E00FF62D6 /* User.swift */,
 				C1524A4F1FC51DAC00FF62D6 /* Owner.swift */,
 				C14684541FCE11C100908B53 /* Shopper.swift */,
+				C16FA30C1FDABC8B00757CAF /* Service.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -286,16 +298,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C16FA3091FDAB52700757CAF /* OwnerServicesVC.swift in Sources */,
 				C1524A461FC44ACD00FF62D6 /* Global.swift in Sources */,
+				C16FA30D1FDABC8B00757CAF /* Service.swift in Sources */,
+				C16FA30B1FDABBA200757CAF /* MainServiceCell.swift in Sources */,
 				C1524A501FC51DAC00FF62D6 /* Owner.swift in Sources */,
 				C1524A331FC44A0000FF62D6 /* LoginVC.swift in Sources */,
 				C14684511FCD127500908B53 /* ShopperSetupVC.swift in Sources */,
 				C14684551FCE11C100908B53 /* Shopper.swift in Sources */,
 				C14684531FCD8B9500908B53 /* BTextField.swift in Sources */,
 				C1524A311FC44A0000FF62D6 /* AppDelegate.swift in Sources */,
-				C146844F1FCD02CE00908B53 /* OwnerSetupVC.swift in Sources */,
+				C146844F1FCD02CE00908B53 /* OwnerInformationVC.swift in Sources */,
 				C1D94F5C1FD3344E007D3851 /* OwnerScheduleVC.swift in Sources */,
 				C1524A4E1FC51B0E00FF62D6 /* User.swift in Sources */,
+				C16FA30F1FDC1C1A00757CAF /* ServiceDetailVC.swift in Sources */,
 				C1524A521FC6282F00FF62D6 /* NewUserVC.swift in Sources */,
 				C1524A4C1FC4D2B600FF62D6 /* DataService.swift in Sources */,
 			);
