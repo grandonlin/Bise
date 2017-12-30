@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftKeychainWrapper
 
 let KEY_UID = "key uid"
 let USER_COUNT = "user count"
@@ -26,7 +27,9 @@ let minuteArr = ["00","10","20","30","40","50"]
 let amPmArr = ["AM", "PM"]
 let timeArr = ["hour(s)", "minutes"]
 let priceUnitArr = ["15 mins", "30 mins", "45 mins", "hour", "time"]
-var services = [Service]()
+var currentOwner = Owner()
+var priceArr = [Price]()
+var ownerID = KeychainWrapper.standard.string(forKey: CURRENT_OWNER_ID)
 
 var currentUsername: String!
 var currentEmail: String!
@@ -73,6 +76,16 @@ extension UIViewController {
         imageView.image = UIImage(named: UIImage().getImageName(name: imageName))
         textField.leftView = imageView
         textField.leftViewMode = .always
+    }
+    
+    func getUnitIndex(compareUnit: String, unitsArray: [String]) -> Int {
+        var index = 0
+        for i in 0...unitsArray.count - 1 {
+            if compareUnit == unitsArray[i] {
+                index = i
+            }
+        }
+        return index
     }
 }
 
@@ -151,6 +164,4 @@ extension UIImage {
     }
 }
 
-extension UITextFieldDelegate {
-    
-}
+

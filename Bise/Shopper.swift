@@ -13,12 +13,12 @@ class Shopper: User {
     private var _shopperID: String!
     private var _shopperName: String!
     private var _gender: String!
-    private var _category: String!
+    private var _email: String!
     private static var _shopperCount = 0
     
     //Create owner data when registering to Firebase
     init(shopperName: String, email: String) {
-        super.init(category: SHOPPER, userName: shopperName, email: email)
+        super.init(category: SHOPPER, userName: shopperName)
 //        super.userCount += 1
         Shopper._shopperCount += 1
         if Shopper._shopperCount < 10 {
@@ -26,9 +26,9 @@ class Shopper: User {
         } else {
             self._shopperID = "\(Shopper._shopperCount)"
         }
-        self._category = SHOPPER
+        self.category = SHOPPER
         self.shopperName = shopperName
-        
+        self.email = email
     }
     
     var shopperCount: Int {
@@ -64,6 +64,17 @@ class Shopper: User {
         }
         set {
             _gender = newValue
+        }
+    }
+    
+    
+    
+    var email: String {
+        get {
+            return _email
+        }
+        set {
+            _email = newValue
         }
     }
 }

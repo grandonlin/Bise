@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9EC0F5DC88FD0E571B1AEF24 /* Pods_Bise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BD806F8B44067FDB100A44 /* Pods_Bise.framework */; };
+		C126C7921FE86FB300AB91A3 /* PriceDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126C7911FE86FB300AB91A3 /* PriceDetailVC.swift */; };
 		C146844F1FCD02CE00908B53 /* OwnerInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C146844E1FCD02CE00908B53 /* OwnerInformationVC.swift */; };
 		C14684511FCD127500908B53 /* ShopperSetupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14684501FCD127500908B53 /* ShopperSetupVC.swift */; };
 		C14684531FCD8B9500908B53 /* BTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14684521FCD8B9500908B53 /* BTextField.swift */; };
@@ -27,12 +28,20 @@
 		C16FA30B1FDABBA200757CAF /* MainServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16FA30A1FDABBA200757CAF /* MainServiceCell.swift */; };
 		C16FA30D1FDABC8B00757CAF /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16FA30C1FDABC8B00757CAF /* Service.swift */; };
 		C16FA30F1FDC1C1A00757CAF /* ServiceDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16FA30E1FDC1C1A00757CAF /* ServiceDetailVC.swift */; };
+		C197581B1FE1558000B727EA /* LocationImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C197581A1FE1558000B727EA /* LocationImageVC.swift */; };
+		C197581D1FE232AB00B727EA /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = C197581C1FE232AB00B727EA /* Address.swift */; };
+		C197581F1FE48F8100B727EA /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C197581E1FE48F8100B727EA /* Schedule.swift */; };
+		C1A375181FE934D8008F8267 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A375171FE934D8008F8267 /* Price.swift */; };
+		C1A3751A1FE9366A008F8267 /* PriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A375191FE9366A008F8267 /* PriceCell.swift */; };
+		C1CD70E41FF47F6500B386E3 /* OwnerMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CD70E31FF47F6500B386E3 /* OwnerMainVC.swift */; };
+		C1CD70E61FF47FCF00B386E3 /* ShopperMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CD70E51FF47FCF00B386E3 /* ShopperMainVC.swift */; };
 		C1D94F5C1FD3344E007D3851 /* OwnerScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D94F5B1FD3344E007D3851 /* OwnerScheduleVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		34BD806F8B44067FDB100A44 /* Pods_Bise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F53BB4B9E0C0840EF97ABF3 /* Pods-Bise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bise/Pods-Bise.debug.xcconfig"; sourceTree = "<group>"; };
+		C126C7911FE86FB300AB91A3 /* PriceDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceDetailVC.swift; sourceTree = "<group>"; };
 		C146844E1FCD02CE00908B53 /* OwnerInformationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnerInformationVC.swift; sourceTree = "<group>"; };
 		C14684501FCD127500908B53 /* ShopperSetupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopperSetupVC.swift; sourceTree = "<group>"; };
 		C14684521FCD8B9500908B53 /* BTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTextField.swift; sourceTree = "<group>"; };
@@ -54,6 +63,13 @@
 		C16FA30A1FDABBA200757CAF /* MainServiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainServiceCell.swift; sourceTree = "<group>"; };
 		C16FA30C1FDABC8B00757CAF /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		C16FA30E1FDC1C1A00757CAF /* ServiceDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceDetailVC.swift; sourceTree = "<group>"; };
+		C197581A1FE1558000B727EA /* LocationImageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationImageVC.swift; sourceTree = "<group>"; };
+		C197581C1FE232AB00B727EA /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		C197581E1FE48F8100B727EA /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		C1A375171FE934D8008F8267 /* Price.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
+		C1A375191FE9366A008F8267 /* PriceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceCell.swift; sourceTree = "<group>"; };
+		C1CD70E31FF47F6500B386E3 /* OwnerMainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnerMainVC.swift; sourceTree = "<group>"; };
+		C1CD70E51FF47FCF00B386E3 /* ShopperMainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopperMainVC.swift; sourceTree = "<group>"; };
 		C1D94F5B1FD3344E007D3851 /* OwnerScheduleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnerScheduleVC.swift; sourceTree = "<group>"; };
 		EA3496D7E79674EFDD61DA55 /* Pods-Bise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bise.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bise/Pods-Bise.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,10 +145,14 @@
 				C1524A321FC44A0000FF62D6 /* LoginVC.swift */,
 				C1524A511FC6282F00FF62D6 /* NewUserVC.swift */,
 				C146844E1FCD02CE00908B53 /* OwnerInformationVC.swift */,
+				C197581A1FE1558000B727EA /* LocationImageVC.swift */,
 				C1D94F5B1FD3344E007D3851 /* OwnerScheduleVC.swift */,
 				C16FA3081FDAB52700757CAF /* OwnerServicesVC.swift */,
 				C16FA30E1FDC1C1A00757CAF /* ServiceDetailVC.swift */,
+				C126C7911FE86FB300AB91A3 /* PriceDetailVC.swift */,
 				C14684501FCD127500908B53 /* ShopperSetupVC.swift */,
+				C1CD70E31FF47F6500B386E3 /* OwnerMainVC.swift */,
+				C1CD70E51FF47FCF00B386E3 /* ShopperMainVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -142,6 +162,7 @@
 			children = (
 				C14684521FCD8B9500908B53 /* BTextField.swift */,
 				C16FA30A1FDABBA200757CAF /* MainServiceCell.swift */,
+				C1A375191FE9366A008F8267 /* PriceCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -153,6 +174,9 @@
 				C1524A4F1FC51DAC00FF62D6 /* Owner.swift */,
 				C14684541FCE11C100908B53 /* Shopper.swift */,
 				C16FA30C1FDABC8B00757CAF /* Service.swift */,
+				C197581C1FE232AB00B727EA /* Address.swift */,
+				C197581E1FE48F8100B727EA /* Schedule.swift */,
+				C1A375171FE934D8008F8267 /* Price.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -298,20 +322,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C197581D1FE232AB00B727EA /* Address.swift in Sources */,
+				C1A3751A1FE9366A008F8267 /* PriceCell.swift in Sources */,
+				C126C7921FE86FB300AB91A3 /* PriceDetailVC.swift in Sources */,
+				C1CD70E41FF47F6500B386E3 /* OwnerMainVC.swift in Sources */,
 				C16FA3091FDAB52700757CAF /* OwnerServicesVC.swift in Sources */,
 				C1524A461FC44ACD00FF62D6 /* Global.swift in Sources */,
 				C16FA30D1FDABC8B00757CAF /* Service.swift in Sources */,
 				C16FA30B1FDABBA200757CAF /* MainServiceCell.swift in Sources */,
 				C1524A501FC51DAC00FF62D6 /* Owner.swift in Sources */,
 				C1524A331FC44A0000FF62D6 /* LoginVC.swift in Sources */,
+				C1A375181FE934D8008F8267 /* Price.swift in Sources */,
 				C14684511FCD127500908B53 /* ShopperSetupVC.swift in Sources */,
 				C14684551FCE11C100908B53 /* Shopper.swift in Sources */,
 				C14684531FCD8B9500908B53 /* BTextField.swift in Sources */,
+				C197581B1FE1558000B727EA /* LocationImageVC.swift in Sources */,
 				C1524A311FC44A0000FF62D6 /* AppDelegate.swift in Sources */,
 				C146844F1FCD02CE00908B53 /* OwnerInformationVC.swift in Sources */,
 				C1D94F5C1FD3344E007D3851 /* OwnerScheduleVC.swift in Sources */,
 				C1524A4E1FC51B0E00FF62D6 /* User.swift in Sources */,
 				C16FA30F1FDC1C1A00757CAF /* ServiceDetailVC.swift in Sources */,
+				C197581F1FE48F8100B727EA /* Schedule.swift in Sources */,
+				C1CD70E61FF47FCF00B386E3 /* ShopperMainVC.swift in Sources */,
 				C1524A521FC6282F00FF62D6 /* NewUserVC.swift in Sources */,
 				C1524A4C1FC4D2B600FF62D6 /* DataService.swift in Sources */,
 			);

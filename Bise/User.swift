@@ -12,15 +12,20 @@ import SwiftKeychainWrapper
 class User {
     
     private var _userName: String!
-    private var _email: String!
     private var _category: String!
     private var _phone: String!
     private static var _userCount = 0
 
-    init(category: String, userName: String, email: String) {
-        _category = category
-        _userName = userName
-        _email = email
+    init() {
+        userName = ""
+        category = ""
+        phone = ""
+    }
+    
+    init(category: String, userName: String) {
+        self.category = category
+        self.userName = userName
+        phone = ""
         if KeychainWrapper.standard.integer(forKey: USER_COUNT) == nil {
             KeychainWrapper.standard.set(0, forKey: USER_COUNT)
         }

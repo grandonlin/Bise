@@ -146,10 +146,11 @@ class NewUserVC: UIViewController {
             } else {
                 print("Grandon: successfully create a new user")
                 if category == OWNER {
-                    let owner = Owner(ownerName: username, email: email)
-                    let locationData = ["Username": username, "Store Information": ["Email": email, "Store Image URL": DEFAULT_LOCATION_IMAGE_URL]] as [String: Any]
-                    KeychainWrapper.standard.set(owner.ownerID, forKey: CURRENT_OWNER_ID)
-                    self.completeSignIn(user: owner, id: owner.ownerID, userData: locationData)
+                    let owner = Owner(ownerName: username)
+                    currentOwner = owner
+                    let locationData = ["Username": username, "Location Information": ["Location Image URL": DEFAULT_LOCATION_IMAGE_URL]] as [String: Any]
+                    KeychainWrapper.standard.set(currentOwner.ownerID, forKey: CURRENT_OWNER_ID)
+                    self.completeSignIn(user: currentOwner, id: currentOwner.ownerID, userData: locationData)
                 } else {
                     let shopper = Shopper(shopperName: username, email: email)
                     let shopperData = ["Username": username, "Email": email] as Dictionary<String, String>
@@ -178,8 +179,12 @@ class NewUserVC: UIViewController {
         }
     }
     
-//    func checkExistingUsername(username: String) {
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let destination = segue.destination as? OwnerInformationVC {
+//            
+//        }
 //    }
+    
     
     func passwordValidation(password: String) {
         if password.characters.count < 8 {
